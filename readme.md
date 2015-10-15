@@ -1,4 +1,4 @@
-# Taller de Angular
+# Taller de AngularJS
 
 ## Para CITIC 2015
 
@@ -13,3 +13,5 @@ En este taller conoceremos Angular.JS. Abarcando los siguientes puntos:
 4.- Trabajando con Factorías
 
 5.- Acceso a datos remotos: Ajax / API
+
+> Texto es <a href="http://www.desarrolloweb.com/manuales/manual-angularjs.html">Manual de AngularJS</a>
