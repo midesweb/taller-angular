@@ -1,0 +1,8 @@
+<h1>Clasificaciones</h1>
+<label>Nueva clasificación:</label> <input type="text" ng-model="nuevaClasificacion">
+<p>
+    <a class="accion" ng-click="crearClasificacion()">Crear clasificación</a>
+</p>
+<ul>
+    <li ng-repeat="clasificacion in clasificaciones track by $index">{{clasificacion.nombre}}</li>
+</ul>

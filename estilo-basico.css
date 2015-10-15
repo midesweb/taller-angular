@@ -1,0 +1,67 @@
+body{
+    font-size: 1.1em;
+    font-family: trebuchet ms, verdana, helvetica, sans-serif;
+    color: #444;
+}
+input{
+    font-size: 1.1em;
+    border-radius: 4px;
+    padding: 5px;
+}
+select{
+    font-size: 1.2em;
+}
+h1, h2{
+    color: #b11938;
+}
+label{
+    width: 120px;
+    display: inline-block;
+    font-weight: bold;
+}
+a.accion{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #fff;
+    background-color: #1469c9;
+    cursor: pointer;
+}
+a.accion:hover{
+    background-color: #33c677;
+}
+table{
+    width: 95%
+}
+th{
+    background-color: #b11938;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+td{
+    background-color: #ddd;
+    padding: 5px;
+}
+
+
+
+
+tr.drama td {
+     background-color: #dcc;   
+}
+tr.comedia td{
+     background-color: #cdc;   
+}
+tr.documental td{
+     background-color: #ccd;   
+}
+.ordenarriba, .ordenabajo{
+    background-image: url(/05-practica-scope/img/arriba.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.ordenabajo{
+    background-image: url(/05-practica-scope/img/abajo.png);
+}

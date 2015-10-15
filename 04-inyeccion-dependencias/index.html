@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desarrollo declarativo</title>
+    <link rel="stylesheet" href="../estilo-basico.css">
+</head>
+<body ng-app="miApp" ng-controller="MiAppController">
+    <h1>Películas preferidas</h1>
+    <p>
+        Estoy usando por primera vez el scope. Luego nos detendremos a explicar mejor el concepto.
+    </p>
+    <p>
+        Película: <input type="text" ng-model="nuevaPelicula">
+    </p>
+    <p>
+        <a class="accion" ng-click="agregarPelicula()">Agregar película</a>
+    </p>
+    <ul>
+        <li ng-repeat="pelicula in peliculas track by $index">{{pelicula}}</li>
+    </ul>
+    <script src="../angular.min.js"></script>
+    <script src="miapp_alternativa.js"></script>
+</body>
+</html>

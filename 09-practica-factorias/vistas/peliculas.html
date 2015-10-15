@@ -1,0 +1,28 @@
+<h1>Películas preferidas</h1>
+<p>
+    <label>Nombre:</label> <input type="text" ng-model="nuevaPelicula.nombre">
+</p>
+<p>
+    <label>Director:</label> <input type="text" ng-model="nuevaPelicula.director">
+</p>
+<p>
+    <label>Clasificación:</label> 
+    <select ng-model="nuevaPelicula.clasificacion">
+        <option ng-repeat="clasif in clasificaciones">{{clasif}}</option>
+    </select>
+</p>
+<p>
+    <a class="accion" ng-click="agregarPelicula()">Agregar película</a>
+</p>
+<table>
+   <tr>
+       <th ng-click="ordena('nombre')" ng-class="{ordenarriba: (campoOrden=='nombre' && !ordendesc), ordenabajo: (campoOrden=='nombre' && ordendesc)}">Nombre</th>
+       <th ng-click="ordena('director')" ng-class="{ordenarriba: (campoOrden=='director' && !ordendesc), ordenabajo: (campoOrden=='director' && ordendesc)}">Director</th>
+       <th ng-click="ordena('clasificacion')" ng-class="{ordenarriba: (campoOrden=='clasificacion' && !ordendesc), ordenabajo: (campoOrden=='clasificacion' && ordendesc)}">Clasificación</th>
+   </tr>
+   <tr class="{{pelicula.clasificacion | lowercase}}" ng-repeat="pelicula in peliculas | orderBy : campoOrden : ordendesc track by $index">
+       <td>{{pelicula.nombre}}</td>
+       <td>{{pelicula.director}}</td>
+       <td>{{pelicula.clasificacion}}</td>
+   </tr>
+</table>

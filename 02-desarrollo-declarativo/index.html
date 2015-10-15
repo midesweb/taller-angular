@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desarrollo declarativo</title>
+    <link rel="stylesheet" href="../estilo-basico.css">
+</head>
+<body ng-app ng-init="peliculas = []">
+    <h1>Películas preferidas</h1>
+    <p>
+        Película: <input type="text" ng-model="nuevaPelicula">
+    </p>
+    <p>
+        <a class="accion" ng-click="peliculas.push(nuevaPelicula)">Agregar película</a>
+    </p>
+    <ul>
+        <li ng-repeat="pelicula in peliculas track by $index">{{pelicula}}</li>
+    </ul>
+    <script src="../angular.min.js"></script>
+</body>
+</html>

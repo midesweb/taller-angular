@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comenzando con las vistas</title>
+    <link rel="stylesheet" href="../estilo-basico.css">
+</head>
+<body ng-app="miAppVistas">
+    <h1>Trabajando con vistas</h1>
+    <nav>
+        <a href="#/">Home</a> |
+        <a href="#/seccion">Sección</a>
+    </nav>
+    
+    <div ng-view></div>
+    
+    <script src="../angular.min.js"></script>
+    <script src="../angular-route.min.js"></script>
+    <script src="miappvistas.js"></script>
+</body>
+</html>

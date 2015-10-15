@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax con un API REST</title>
+    <link rel="stylesheet" href="../estilo-basico.css">
+</head>
+<body ng-app="paisesApp" ng-controller="PaisesAppController">
+    <h1>Países del mundo</h1>
+    <p>
+        Vamos a usar el servicio web llamado "Rest Countries". 
+        <a href="https://restcountries.eu/">https://restcountries.eu/</a>
+    </p>
+    <p>
+        La URL <a href="https://restcountries.eu/rest/v1/all">https://restcountries.eu/rest/v1/all</a> devuelve todos los países del mundo.
+    </p>
+    <div ng-show="paises.length == 0">Cargando paises...</div>
+    <h2 ng-show="paises.length">Se encontraron {{paises.length}} en el mundo</h2>
+    <ol>
+        <li ng-repeat="pais in paises">{{pais.name}} - {{pais.capital}}</li>
+    </ol>
+    
+    <script src="../angular.min.js"></script>
+    <script src="paisesApp.js"></script>
+</body>
+</html>

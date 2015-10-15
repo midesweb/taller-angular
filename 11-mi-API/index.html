@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primeras vistas</title>
+    <link rel="stylesheet" href="../estilo-basico.css">
+</head>
+<body ng-app="miApp" ng-controller="MiAppController">
+    <nav>
+        <a href="#/">Películas</a> |
+        <a href="#/clasificaciones">Clasificaciones</a> 
+    </nav>
+   
+    <div ng-view></div>
+    
+    <script src="../angular.min.js"></script>
+    <script src="../angular-route.min.js"></script>
+    <script src="miapp.js"></script>
+</body>
+</html>
