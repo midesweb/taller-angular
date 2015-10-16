@@ -14,4 +14,8 @@ En este taller conoceremos Angular.JS. Abarcando los siguientes puntos:
 
 5.- Acceso a datos remotos: Ajax / API
 
-> Texto con explicaciones en <a href="http://www.desarrolloweb.com/manuales/manual-angularjs.html">Manual de AngularJS</a>
+## Material en texto
+
+En este mismo repositorio se encuentra el PDF de la presentación usada durante las clases para ir explicando los términos que deben conocerse para la realización de los ejemplos.
+
+Además encontrarás mucho más texto con explicaciones detalladas de muchos otros aspectos de este framework en el <a href="http://www.desarrolloweb.com/manuales/manual-angularjs.html">Manual de AngularJS de DesarrolloWeb.com</a>
